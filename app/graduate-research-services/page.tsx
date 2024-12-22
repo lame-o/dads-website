@@ -9,14 +9,14 @@ import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation
 export default function GraduateResearchServices() {
   const searchParams = useSearchParams()
   const services = [
-    { id: 'office-hours', icon: Clock },
-    { id: 'coaching', icon: BookOpen },
-    { id: 'scientific-consulting', icon: FlaskConical },
-    { id: 'statistics', icon: BarChart },
-    { id: 'academic-review', icon: Glasses },
-    { id: 'editing', icon: Edit },
-    { id: 'writing-and-publication', icon: BookType },
-    { id: 'defense-preparation', icon: Presentation }
+    { id: 'office-hours', icon: Clock, title: 'Office Hours' },
+    { id: 'coaching', icon: BookOpen, title: 'Dissertation Coaching' },
+    { id: 'scientific-review', icon: FlaskConical, title: 'Scientific Review' },
+    { id: 'statistics', icon: BarChart, title: 'Statistics (Methods Review, Data Analysis, and Results Interpretation)' },
+    { id: 'editorial-review', icon: Glasses, title: 'Editorial Review' },
+    { id: 'graduate-writing-coach', icon: Edit, title: 'Graduate Writing Coach' },
+    { id: 'defense-preparation', icon: Presentation, title: 'Defense Preparation' },
+    { id: 'publication', icon: BookType, title: 'Publishing in Journal' },
   ]
 
   const scrollToSection = (id: string) => {
@@ -60,36 +60,37 @@ export default function GraduateResearchServices() {
           <h2 className="section-title text-center">How Can I Help?</h2>
           <div className="space-y-6 max-w-4xl mx-auto">
             <p className="content-text text-lg leading-relaxed">
-              I understand the challenges of seeking a <span className="font-semibold text-primary">graduate degree</span> while still needing to <span className="font-semibold text-primary">work</span> and maintain a 
-              <span className="font-semibold text-primary"> personal home life</span>. Depending on your needs, I can be a steady voice to help you navigate any or all of 
-              the stages of research for a thesis or dissertation.
+              It is extremely challenging to earn a graduate degree while still maintaining a job and personal life.
+              Would you like to have a personal coach who is interested in your research and willing to help you
+              succeed? I can provide a steady, reliable voice to help you navigate the stages of research for your
+              thesis-dissertation.
             </p>
             <p className="content-text text-lg leading-relaxed">
-              The journey is long from <span className="font-semibold">course work</span>, <span className="font-semibold">topic focus</span>, <span className="font-semibold">lit review</span>, <span className="font-semibold">proposal development</span>, <span className="font-semibold">methods construction</span>, 
-              <span className="font-semibold"> prospectus writing and defense</span>, <span className="font-semibold">IRB submission</span>, <span className="font-semibold">data collection</span>, <span className="font-semibold">statistical analyses and interpretation</span>, 
-              <span className="font-semibold"> presentation of results</span>, <span className="font-semibold">drawing conclusions</span>, <span className="font-semibold">dissertation write-up</span>, <span className="font-semibold">defense preparation</span>, <span className="font-semibold">publication</span>, 
-              and eventually <span className="font-semibold text-primary">graduation</span>. It's a challenging adventure you have embarked upon, few attempt it, and many who do, are not successful.
+              The journey is long - from graduate course work, topic search, lit review, proposal
+              development, methods construction, prospectus writing and defense, IRB submission, data collection,
+              statistical analyses and interpretation, presentation of results, drawing conclusions, dissertation write-
+              up, defense preparation, publication, and eventually graduation. It is a daunting challenge you have
+              accepted; few even attempt it, and many of those who do, are not successful.
             </p>
             <p className="content-text text-xl font-medium text-primary/90 leading-relaxed">
-              <span className="bg-primary/20 block px-3 py-2 rounded-lg">You are a graduate research student determined to succeed and graduate. That's why you're here. 
-              There are many ways I can be of help on your quest. You will not be farmed off to an unqualified 
-              contractor, I will work with you directly, fully focused on helping you succeed.</span>
+              <span className="bg-primary/20 block px-3 py-2 rounded-lg">
+                But you are determined to succeed and graduate. That's why you're here.
+              </span>
             </p>
             <p className="content-text text-lg leading-relaxed">
-              As a <span className="font-semibold text-primary">Graduate Research Coach</span>, below is the range of potential areas I may be of assistance. 
-              You decide how best to engage my graduate research services.
+              Here are a few different ways I might be of help as your Graduate Research Coach.
             </p>
           </div>
         </div>
 
         <nav className="quick-nav" aria-label="Quick navigation">
-          {services.map(({ id }) => (
+          {services.map(({ id, title }) => (
             <button
               key={id}
               onClick={() => scrollToSection(id)}
               className="quick-nav-button"
             >
-              {id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+              {title}
             </button>
           ))}
         </nav>
@@ -99,7 +100,7 @@ export default function GraduateResearchServices() {
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Clock className="w-6 h-6" />
-                <span>Open Office Hours</span>
+                <span>Office Hours</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -111,7 +112,7 @@ export default function GraduateResearchServices() {
           </Card>
         </div>
 
-        {services.slice(1).map(({ id, icon: Icon }) => (
+        {services.slice(1).map(({ id, icon: Icon, title }) => (
           <div key={id} id={id} className="page-section scroll-mt-20 relative group">
             <div className="absolute top-6 right-6">
               <div className="p-3 rounded-full bg-secondary transition-all duration-300 group-hover:bg-primary/10 group-hover:scale-110 transform relative overflow-hidden">
@@ -120,17 +121,18 @@ export default function GraduateResearchServices() {
               </div>
             </div>
             <div className="pr-24">
-              <h2 className="section-title">{id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</h2>
+              <h2 className="section-title">{title}</h2>
               <div className="content-text">
                 {id === 'coaching' && (
                   <p>
-                    I can provide organizational and time management strategies to help empower and motivate you to 
-                    succeed. Goal setting and procrastination avoidance can be a focus. I can also be an empathetic ear to 
-                    vent about your Chair or other challenges you are juggling. This role is more focused on your approach 
-                    to conducting graduate research while managing external responsibilities.
+                    This type of coaching is less academic, and more focused on your approach to conducting graduate
+                    research, while managing all the other stuff. I can share effective organizational and time management
+                    strategies to help guide and motivate you to succeed. Goal setting, outlining, mapping, scheduled
+                    meetings, and procrastination avoidance can be a focus. I can also be an empathetic ear for venting
+                    about your Chair.
                   </p>
                 )}
-                {id === 'scientific-consulting' && (
+                {id === 'scientific-review' && (
                   <>
                     <p className="mb-4">
                       I am adept at seeing the big picture, and the practical steps needed for you to get graduate. I can 
@@ -165,14 +167,17 @@ export default function GraduateResearchServices() {
                     </p>
                   </>
                 )}
-                {id === 'academic-review' && (
+                {id === 'editorial-review' && (
                   <p>
-                    Academic consultation and review of your proposal and final dissertation or thesis is helpful to ensure 
-                    success. Addressing the concerns of committee members is critical. My feedback will be thorough and 
-                    provide suggestions to move forward when obstacles are presented.
+                    Editorial Reviews focus on the grammar, formatting, references, flow of content, sentence structure,
+                    and chapter construction and completeness. The detailed review will ensure you have satisfied all the
+                    required protocols. Professional editing pleases committee members because it allows them to focus
+                    on the content. Editorial Reviews can be provided for your proposal, IRB application, and thesis-
+                    dissertation manuscript. You want to be proud of your final thesis-dissertation, and a professional
+                    Editorial Review sharpens the edges before publication.
                   </p>
                 )}
-                {id === 'editing' && (
+                {id === 'graduate-writing-coach' && (
                   <>
                     <p className="mb-4">
                       Dissertation and thesis reviews can be conducted at different levels. A basic review can be focused on 
@@ -193,7 +198,7 @@ export default function GraduateResearchServices() {
                     </p>
                   </>
                 )}
-                {id === 'writing-and-publication' && (
+                {id === 'defense-preparation' && (
                   <>
                     <p className="mb-4">
                       <span className="font-semibold text-primary">Scientific Writing:</span> I can provide strategies and approaches to improve and refine your writing skills to 
@@ -211,11 +216,12 @@ export default function GraduateResearchServices() {
                     </p>
                   </>
                 )}
-                {id === 'defense-preparation' && (
+                {id === 'publication' && (
                   <p>
-                    A professional PowerPoint presentation and well-rehearsed verbal script help ensure your successful 
-                    defense of your proposal and final dissertation or thesis. I have developed a guide for defense 
-                    presentations that will help you construct your presentation, and prepare for the defense.
+                    Publishing your research in a peer-reviewed journal is not a necessary step to earn your degree, but it is
+                    rewarding (professionally and personally) to have your research available to the world. The process is
+                    long and frustrating, but I can help in strategy, reviews, and responding to the comments and feedback
+                    from journal reviewers.
                   </p>
                 )}
               </div>

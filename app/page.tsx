@@ -73,12 +73,12 @@ export default function Home() {
             </SmoothLink>
             {[
               { name: 'Coaching', icon: BookOpen, id: 'coaching' },
-              { name: 'Scientific Consulting', icon: FlaskConical, id: 'scientific-consulting' },
+              { name: 'Scientific Review', icon: FlaskConical, id: 'scientific-review' },
               { name: 'Statistics', icon: BarChart, id: 'statistics' },
-              { name: 'Academic Review', icon: Glasses, id: 'academic-review' },
-              { name: 'Editing', icon: Edit, id: 'editing' },
-              { name: 'Writing and Publication', icon: BookType, id: 'writing-and-publication' },
+              { name: 'Editorial Review', icon: Glasses, id: 'editorial-review' },
+              { name: 'Graduate Writing Coach', icon: Edit, id: 'graduate-writing-coach' },
               { name: 'Defense Preparation', icon: PresentationChart, id: 'defense-preparation' },
+              { name: 'Publication', icon: BookType, id: 'publication' },
             ].map((service, index) => (
               <SmoothLink 
                 key={service.name} 
