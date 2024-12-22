@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { SmoothLink } from '@/components/ui/smooth-link'
-import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, PresentationIcon as PresentationChart } from 'lucide-react'
+import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, PresentationIcon as PresentationChart, Clock } from 'lucide-react'
 import { useEffect } from 'react'
 import { smoothScrollToHash } from '@/lib/smoothScroll'
 import { PageWrapper } from '@/app/components/PageWrapper'
@@ -51,7 +51,26 @@ export default function Home() {
 
         <section className="bg-secondary/50 p-8 rounded-lg shadow-lg">
           <h2 className="text-4xl font-bold mb-8 text-center text-primary">How Can I Help?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 [&>*:last-child]:lg:col-start-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <SmoothLink 
+              href="/graduate-research-services#office-hours"
+              className={`
+                bg-background text-foreground p-6 rounded-lg
+                shadow-[0_4px_6px_-1px_rgba(0,120,180,0.1),0_2px_4px_-1px_rgba(0,120,180,0.06)]
+                border transition-all duration-300 ease-in-out
+                hover:shadow-[0_10px_15px_-3px_rgba(0,120,180,0.1),0_4px_6px_-2px_rgba(0,120,180,0.05)]
+                hover:border-primary hover:bg-primary/5
+                hover:scale-105 transform
+                flex flex-col items-center justify-center space-y-4
+                group
+                ${getBorderColor(0)}
+              `}
+            >
+              <div className="p-3 rounded-full bg-secondary transition-colors duration-300 group-hover:bg-primary/10">
+                <Clock className="w-6 h-6 text-primary group-hover:text-primary/80" />
+              </div>
+              <span className="text-lg font-semibold text-center transition-colors duration-300 group-hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 group-hover:after:w-full">Office Hours</span>
+            </SmoothLink>
             {[
               { name: 'Coaching', icon: BookOpen, id: 'coaching' },
               { name: 'Scientific Consulting', icon: FlaskConical, id: 'scientific-consulting' },
@@ -73,7 +92,7 @@ export default function Home() {
                   hover:scale-105 transform
                   flex flex-col items-center justify-center space-y-4
                   group
-                  ${getBorderColor(index)}
+                  ${getBorderColor(index + 1)}
                 `}
               >
                 <div className="p-3 rounded-full bg-secondary transition-colors duration-300 group-hover:bg-primary/10">

@@ -4,11 +4,12 @@ import { useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Card, CardHeader, CardTitle, CardContent } from '@/app/components/ui/card'
 import { PageWrapper } from '@/app/components/PageWrapper'
-import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation } from 'lucide-react'
+import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation, Clock } from 'lucide-react'
 
 export default function GraduateResearchServices() {
   const searchParams = useSearchParams()
   const services = [
+    { id: 'office-hours', icon: Clock },
     { id: 'coaching', icon: BookOpen },
     { id: 'scientific-consulting', icon: FlaskConical },
     { id: 'statistics', icon: BarChart },
@@ -93,7 +94,24 @@ export default function GraduateResearchServices() {
           ))}
         </nav>
 
-        {services.map(({ id, icon: Icon }) => (
+        <div className="space-y-8">
+          <Card id="office-hours" className="scroll-mt-24">
+            <CardHeader>
+              <CardTitle className="flex items-center space-x-3">
+                <Clock className="w-6 h-6" />
+                <span>Open Office Hours</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p>
+                My virtual door is open for you to schedule a Zoom call anytime. It is best if I can receive information or
+                questions before meeting so I can be prepared to help you work through the issue.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {services.slice(1).map(({ id, icon: Icon }) => (
           <div key={id} id={id} className="page-section scroll-mt-20 relative group">
             <div className="absolute top-6 right-6">
               <div className="p-3 rounded-full bg-secondary transition-all duration-300 group-hover:bg-primary/10 group-hover:scale-110 transform relative overflow-hidden">
