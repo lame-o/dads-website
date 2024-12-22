@@ -12,47 +12,47 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-start gap-8">
               <div>
                 <h2 className="section-title">Ryan H. Dwight, PhD</h2>
-                <h3 className="text-2xl mb-4 text-muted-foreground">Graduate Research Coach</h3>
+                <h3 className="text-2xl mb-4 text-primary/90 font-medium">Graduate Research Coach</h3>
                 <div className="content-text space-y-4 leading-relaxed max-w-3xl mx-auto">
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>I have been a <span className="font-semibold">leading researcher and academic</span> in the <span className="underline decoration-wavy decoration-primary/50">environmental health sciences</span> arena</span> 
+                    <span>I have been a <span className="font-bold">leading researcher and academic</span> in the <span className="text-primary font-medium">environmental health sciences</span> arena</span> 
                     <span className="text-2xl">🔬</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>My career path has traveled in the <span className="font-semibold">private sector, academia, and the Federal government</span></span>
+                    <span>My career path has traveled in the <span className="font-medium">private sector, academia, and the Federal government</span></span>
                     <span className="text-2xl">🏛️</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>I am an experienced <span className="font-semibold">manager, scientific researcher, analytical thinker, educator, and critical problem solver</span></span>
+                    <span>I am an experienced <span className="font-bold">manager, scientific researcher, analytical thinker, educator, and critical problem solver</span></span>
                     <span className="text-2xl">📚</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>Along the way I have supervised <span className="font-semibold">dozens of faculty and hundreds of students</span></span>
+                    <span>Along the way I have supervised <span className="font-medium">dozens of faculty and hundreds of students</span></span>
                     <span className="text-2xl">👨‍🏫</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>I have <span className="underline decoration-wavy decoration-primary/50">developed research programs</span>, <span className="underline decoration-wavy decoration-primary/50">conceived new approaches</span>, and produced and presented <span className="underline decoration-wavy decoration-primary/50">budgets and annual reports</span></span>
+                    <span>I have <span className="text-primary font-medium">developed research programs</span>, <span className="text-primary font-medium">conceived new approaches</span>, and produced and presented <span className="text-primary font-medium">budgets and annual reports</span></span>
                     <span className="text-2xl">📊</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>I am a <span className="underline decoration-wavy decoration-primary/50">clear communicator</span>, and am <span className="underline decoration-wavy decoration-primary/50">comfortable working with everyone</span></span>
+                    <span>I am a <span className="text-primary font-medium">clear communicator</span>, and am <span className="text-primary font-medium">comfortable working with everyone</span></span>
                     <span className="text-2xl">🤝</span>
                   </p>
 
                   <p className="flex items-center gap-2 ml-4">
                     <span className="text-xl text-primary">➜</span>
-                    <span>My <span className="underline decoration-wavy decoration-primary/50">range of experiences and knowledge</span> allow me to <span className="font-semibold animate-pulse">empower, inspire and motivate</span> graduate research students to <span className="underline decoration-wavy decoration-primary/50">achieve their academic goals</span></span>
+                    <span>My <span className="text-primary font-medium">range of experiences and knowledge</span> allow me to <span className="font-bold text-primary animate-pulse">empower, inspire and motivate</span> graduate research students to <span className="text-primary font-medium">achieve their academic goals</span></span>
                     <span className="text-2xl">✨</span>
                   </p>
                 </div>

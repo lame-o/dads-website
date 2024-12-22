@@ -108,35 +108,28 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 text-primary">Greetings fellow researcher,</h2>
           <div className="space-y-4 text-foreground/80">
             <p className="text-lg leading-relaxed">
-              I am <span className="font-semibold text-primary">Dr. Dwight</span>, a calm clear voice to help you navigate the academic and emotional obstacles and 
-              challenges of higher education. With <span className="font-semibold">decades of experience</span> working with masters and doctoral students 
-              on improving their thesis or dissertation, I can mentor or coach you to complete the process and earn 
-              your degree.
+              My name is <span className="font-semibold text-primary">Dr. Dwight</span>, and I here as a calm clear voice to help you navigate the stormy waters of higher
+              education 🌊 I have <span className="font-semibold">decades of experience</span> working with masters and doctoral students on improving their
+              thesis-dissertations, and I can help you to complete the process and earn your degree. Contact me if
+              you want an experienced <span className="font-semibold text-primary">Graduate Research Coach</span>, PhD advisor or any of the graduate research
+              services I can provide to help you get that degree in your hands.
             </p>
             <p className="text-lg leading-relaxed">
-              Some dissertation coaches can only provide organizational or emotional support, and they avoid your 
-              methods, statistics and results. Some dissertation services can provide statistical outputs for you, but 
-              are unable to help you interpret the results nor prepare to defend those results. As a <span className="font-semibold text-primary">Graduate Research 
-              Coach</span>, I can provide a range of graduate student support services from <span className="font-semibold">dissertation coach</span>, <span className="font-semibold">academic 
-              advisor</span>, <span className="font-semibold">scientific editor</span>, <span className="font-semibold">methods consultant</span>, <span className="font-semibold">statistics</span>, <span className="font-semibold">IRB submission prep</span>, <span className="font-semibold">defense prep</span>, <span className="font-semibold">publication</span>, 
-              and more. I understand the entire process (masters, doctorate, PhD) from my extensive experience as a 
-              researcher, Committee Chair, IRB member, and Director of two doctoral programs. I am passionate 
-              about research, and I love teaching others the process so they can achieve their goals.
+              Some dissertation coaches can only provide organizational or emotional support, and they avoid your
+              methods, statistics and results. Some dissertation services can provide statistical outputs for you, but
+              are unable to help you interpret the results nor prepare to defend the results. As a <span className="font-semibold text-primary">Graduate Research
+              Coach</span>, <span className="font-medium">I can provide a range of graduate student support services from</span> <span className="font-bold underline">dissertation coach</span>, <span className="font-semibold underline">academic
+              advisor</span>, <span className="font-semibold underline">scientific editor</span>, <span className="font-semibold underline">methods consultant</span>, <span className="font-semibold underline">statistics</span>, <span className="font-semibold underline">IRB submission prep</span>, <span className="font-semibold underline">defense prep</span>, <span className="font-semibold underline">publication</span>,
+              and more. I understand the entire process (masters, doctorate, PhD) from my extensive experience as a
+              researcher, professor, Committee Chair, IRB member, and Director of two doctoral programs. I am
+              passionate about research, and I love teaching others the process so they can achieve their goals 🥅
             </p>
             <p className="text-lg leading-relaxed">
-              Students appreciate my teaching style as I synthesize complex research concepts and explain them in a 
-              straightforward manner (<SmoothLink href="/student-reviews" className="text-accent hover:underline">Student Reviews</SmoothLink>). I am an educator by nature and am eager to help anyone 
-              who is hungry for knowledge and wanting to move forward. I have successfully mentored students from 
-              around the world, and I'm comfortable working with everyone. If you're a researcher in the fields of 
-              <span className="font-semibold"> health</span>, <span className="font-semibold">science</span>, <span className="font-semibold">economics</span>, or <span className="font-semibold">education</span>, we can work together.
-            </p>
-            <p className="text-lg leading-relaxed">
-              Fees are dependent on the type and level of <span className="font-semibold text-primary">Graduate Research Services</span> you desire. Every project is 
-              different, so we can meet for a <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild><a href="mailto:ryanhdwight@yahoo.com">free 30-minute consultation</a></Button> and discuss your individual situation. Then 
-              if you want to enlist my services, together we can develop a plan with clear expectations and associated 
-              costs pre-determined. We will always discuss and agree on compensation before work is conducted. 
-              Contact me if you want an experienced Graduate Research Coach, PhD advisor or any of the graduate 
-              research services I can provide to help you get that degree in your hands.
+              Students appreciate my teaching style as I synthesize complex research concepts and explain them in a
+              straightforward manner (<SmoothLink href="/student-reviews" className="text-accent hover:underline">Student Reviews</SmoothLink>). I am an educator by nature and am eager to help anyone
+              who is hungry for knowledge and wanting to move forward. I have successfully mentored students from
+              around the world, and I'm comfortable working with everyone. If you're a researcher in the fields of
+              <span className="font-semibold"> health 💊</span>, <span className="font-semibold"> science 🧪</span>, <span className="font-semibold"> economics 📈</span>, or <span className="font-semibold"> education 🎓</span>, we can work together!
             </p>
           </div>
         </section>
