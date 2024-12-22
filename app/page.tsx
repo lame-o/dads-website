@@ -10,7 +10,10 @@ import { PageWrapper } from '@/app/components/PageWrapper'
 
 export default function Home() {
   useEffect(() => {
-    smoothScrollToHash()
+    const hash = window.location.hash.replace('#', '')
+    if (hash) {
+      smoothScrollToHash(hash)
+    }
   }, [])
 
   const getBorderColor = (index: number) => {
