@@ -5,45 +5,13 @@ import { Star, User } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { PageWrapper } from '@/app/components/PageWrapper'
 
-const fadeInOut = `
-  @keyframes fadeInOut {
-    0% { opacity: 0; transform: translateY(10px); }
-    10%, 90% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-10px); }
-  }
-`;
-
-const fadeClass = "animate-[fadeInOut_8s_ease-in-out]";
-
-function RandomQuote({ reviews }: { reviews: typeof reviews }) {
-  const [quote, setQuote] = useState(reviews[0])
-  const [key, setKey] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const newIndex = Math.floor(Math.random() * reviews.length)
-      const newQuote = reviews[newIndex]
-      if (newQuote !== quote) {
-        setQuote(newQuote)
-        setKey(prev => prev + 1)
-      }
-    }, 8000) // Match this with animation duration
-
-    return () => clearInterval(interval)
-  }, [reviews, quote])
-
-  return (
-    <div className="page-section bg-gradient-to-br from-background to-muted p-6 rounded-lg mb-8">
-      <style>{fadeInOut}</style>
-      <div key={key} className={`${fadeClass} content-text italic text-center`}>
-        "{quote.content.split(' ').slice(0, 30).join(' ')}..."
-        <div className="mt-2 font-semibold text-right text-primary">- {quote.name}</div>
-      </div>
-    </div>
-  )
+type Review = {
+  name: string;
+  rating: number;
+  content: string;
 }
 
-const reviews = [
+const reviews: Review[] = [
   {
     name: "Carla",
     rating: 5,
@@ -80,6 +48,44 @@ const reviews = [
     content: "This course, and your instruction, were of inestimable value to me. To succeed, I was forced to overcome my self-doubt about my ability to select an appropriate topic, adequately derive a research question, and design a viable study. However, I persevered per your guidance and encouragement. Your guidance provided me a step-by-step instruction to create, present and defend a study prospectus. Thus, \"by the numbers,\" I was able to sequentially and progressively overcome my doubts about the process and my ability to adhere to it. Your encouragement was specific to my topic, my data and my temperament. This helped me to gain faith in my scholarship from both an empirical and personal manner. Thus, you prepared me for success in this course. Thank you again, Dr. Dwight, for your excellent instruction."
   }
 ]
+
+const fadeInOut = `
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+`;
+
+const fadeClass = "animate-[fadeInOut_8s_ease-in-out]";
+
+function RandomQuote({ reviews }: { reviews: Review[] }) {
+  const [quote, setQuote] = useState(reviews[0])
+  const [key, setKey] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const newIndex = Math.floor(Math.random() * reviews.length)
+      const newQuote = reviews[newIndex]
+      if (newQuote !== quote) {
+        setQuote(newQuote)
+        setKey(prev => prev + 1)
+      }
+    }, 8000) // Match this with animation duration
+
+    return () => clearInterval(interval)
+  }, [reviews, quote])
+
+  return (
+    <div className="page-section bg-gradient-to-br from-background to-muted p-6 rounded-lg mb-8">
+      <style>{fadeInOut}</style>
+      <div key={key} className={`${fadeClass} content-text italic text-center`}>
+        "{quote.content.split(' ').slice(0, 30).join(' ')}..."
+        <div className="mt-2 font-semibold text-right text-primary">- {quote.name}</div>
+      </div>
+    </div>
+  )
+}
 
 function StarRating({ rating }: { rating: number }) {
   return (
