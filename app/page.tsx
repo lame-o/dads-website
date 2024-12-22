@@ -112,12 +112,18 @@ export default function Home() {
               education 🌊 I have <span className="font-semibold">decades of experience</span> working with masters and doctoral students on improving their
               thesis-dissertations, and I can help you to complete the process and earn your degree. Contact me if
               you want an experienced <span className="font-semibold text-primary">Graduate Research Coach</span>, PhD advisor or any of the graduate research
-              services I can provide to help you get that degree in your hands.
+              services I can provide to help you get that degree in your hands! 🙌
             </p>
             <p className="text-lg leading-relaxed">
-              Some dissertation coaches can only provide organizational or emotional support, and they avoid your
-              methods, statistics and results. Some dissertation services can provide statistical outputs for you, but
-              are unable to help you interpret the results nor prepare to defend the results. As a <span className="font-semibold text-primary">Graduate Research
+            ❌ Other dissertation coaches can only provide organizational or emotional support, and they avoid your
+              methods, statistics and results.
+            </p>
+            <p className="text-lg leading-relaxed">
+            ❌ Other dissertation services can provide statistical outputs for you, but
+              are unable to help you interpret the results nor prepare to defend the results.
+            </p>
+            <p className="text-lg leading-relaxed">
+              ✔️ As a <span className="font-semibold text-primary">Graduate Research
               Coach</span>, <span className="font-medium">I can provide a range of graduate student support services from</span> <span className="font-bold underline">dissertation coach</span>, <span className="font-semibold underline">academic
               advisor</span>, <span className="font-semibold underline">scientific editor</span>, <span className="font-semibold underline">methods consultant</span>, <span className="font-semibold underline">statistics</span>, <span className="font-semibold underline">IRB submission prep</span>, <span className="font-semibold underline">defense prep</span>, <span className="font-semibold underline">publication</span>,
               and more. I understand the entire process (masters, doctorate, PhD) from my extensive experience as a

@@ -26,7 +26,7 @@ export default function CoachingFees() {
             <p className="text-lg leading-relaxed">
               I'm flexible to meet on your schedule, and my review turn-around times are fast and comprehensive (better than your committee I bet).
               Contact me if you want an experienced Graduate Research Coach, PhD advisor or any of the Graduate Research Services I can
-              provide to help you get that degree in your hands.
+              provide to help you get that degree in your hands! 
             </p>
 
             <div className="bg-primary/20 p-6 rounded-lg mt-12">
