@@ -36,6 +36,7 @@ export default function Header() {
               { name: 'Home', path: '/' },
               { name: 'Graduate Research Services', path: '/graduate-research-services' },
               { name: 'About Me', path: '/about' },
+              { name: 'Coaching Fees', path: '/coaching-fees' },
               { name: 'Student Reviews', path: '/student-reviews' },
             ].map((item) => (
               <li key={item.name}>
