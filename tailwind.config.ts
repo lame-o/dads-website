@@ -51,6 +51,16 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+  		keyframes: {
+  			shimmer: {
+  				'0%': { transform: 'translateX(-100%)', opacity: '0' },
+  				'50%': { opacity: '0.8' },
+  				'100%': { transform: 'translateX(100%)', opacity: '0' }
+  			}
+  		},
+  		animation: {
+  			shimmer: 'shimmer 0.75s ease-in-out'
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
