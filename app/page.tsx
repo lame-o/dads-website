@@ -48,7 +48,7 @@ export default function Home() {
 
         <section className="bg-secondary/50 p-8 rounded-lg shadow-lg">
           <h2 className="text-4xl font-bold mb-8 text-center text-primary">How Can I Help?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 [&>*:last-child]:lg:col-start-2">
             {[
               { name: 'Coaching', icon: BookOpen, id: 'coaching' },
               { name: 'Scientific Consulting', icon: FlaskConical, id: 'scientific-consulting' },
@@ -69,13 +69,14 @@ export default function Home() {
                   hover:border-primary hover:bg-primary/5
                   hover:scale-105 transform
                   flex flex-col items-center justify-center space-y-4
+                  group
                   ${getBorderColor(index)}
                 `}
               >
                 <div className="p-3 rounded-full bg-secondary transition-colors duration-300 group-hover:bg-primary/10">
                   <service.icon className="w-8 h-8 text-primary transition-colors duration-300 group-hover:text-primary-dark" />
                 </div>
-                <span className="text-lg font-semibold text-center transition-colors duration-300 group-hover:text-primary-dark">{service.name}</span>
+                <span className="text-lg font-semibold text-center transition-colors duration-300 group-hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 group-hover:after:w-full">{service.name}</span>
               </SmoothLink>
             ))}
           </div>
