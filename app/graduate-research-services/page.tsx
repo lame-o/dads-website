@@ -140,24 +140,24 @@ export default function GraduateResearchServices() {
                 {id === 'coaching' && (
                   <>
                     <p className="mb-6">
-                      This type of coaching is less academic, and more focused on your <span className="font-semibold">approach to conducting graduate
+                      This type of coaching is less academic, and more focused on your <span className="font-bold">approach to conducting graduate
                       research</span>, while managing all the other stuff. I can share effective <span className="font-semibold">organizational and time management
-                      strategies</span> to help guide and motivate you to succeed. <span className="font-semibold">Goal setting, outlining, mapping, scheduled
+                      strategies</span> to help guide and motivate you to succeed. <span className="font-medium">Goal setting, outlining, mapping, scheduled
                       meetings, and procrastination avoidance</span> can be a focus. I can also be an empathetic ear for venting
                       about your Chair.
                     </p>
                     <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
-                      <h3 className="text-lg font-semibold text-primary mb-3">✨ Special Session: The Big-Picture <span className="text-primary/80">(highly recommended)</span></h3>
+                      <h3 className="text-lg font-semibold text-primary mb-3">✨ Special Session: The Big-Picture <span className="text-primary/90 italic">(highly recommended)</span></h3>
                       <p className="mb-3">
-                        <span className="font-medium">(2-hour package deal)</span> We will have a comprehensive big-picture discussion on conducting graduate level
+                        <span className="font-semibold">(2-hour package deal)</span> We will have a comprehensive big-picture discussion on conducting graduate level
                         research, and how to map your path to graduation. We will explore the process and procedures of
                         conceiving and conducting valid research.
                       </p>
                       <p>
-                        The discussion will weave together topics such as the <span className="font-semibold">fields of
+                        The discussion will weave together topics such as the <span className="font-medium">fields of
                         study, different methods and approaches, types of statistical testing, types of data and collection
                         methods, IRB considerations, committee expectations</span>, and much more. It will all tie together and
-                        integrate your research so you come away with a <span className="font-semibold text-primary">big-picture perspective of graduate research</span>, and
+                        integrate your research so you come away with a <span className="font-bold">big-picture perspective of graduate research</span>, and
                         where you fit in.
                       </p>
                     </div>
@@ -166,14 +166,14 @@ export default function GraduateResearchServices() {
                 {id === 'scientific-review' && (
                   <>
                     <p className="mb-4">
-                      <span className="font-semibold">Scientific reviews</span> of your proposal or thesis-dissertation ensure all required components are <span className="font-semibold">valid,
-                      complete, and clearly presented</span>. Scientific Review at the <span className="text-primary font-semibold">proposal stage</span> focuses on the <span className="font-semibold">research
+                      Scientific reviews of your <span className="font-medium">proposal or thesis-dissertation</span> ensure all required components are <span className="font-medium">valid,
+                      complete, and clearly presented</span>. Scientific Review at the <span className="text-primary font-bold">Proposal stage</span> focuses on the <span className="font-medium">research
                       methods section</span> (Intro and Lit Review are not reviewed for this). Individual sections of the methods are
                       reviewed including the proposed statistical tests.
                     </p>
                     <p className="mb-4">
-                      Scientific Review at the <span className="text-primary font-semibold">thesis-dissertation phase </span> 
-                      focuses on the chapters for <span className="font-semibold">results and conclusions</span>. I can help with <span className="font-semibold">accurate interpretation of statistical
+                      Scientific Review at the <span className="text-primary font-bold">Thesis-Dissertation phase </span> 
+                      focuses on the chapters for <span className="font-medium">results and conclusions</span>. I can help with <span className="font-medium">accurate interpretation of statistical
                       outputs</span>, so you can present the results with confidence to your committee. When they raise questions,
                       I can decipher their concerns and provide suggestions how to move forward.
                     </p>
@@ -186,7 +186,7 @@ export default function GraduateResearchServices() {
                 )}
                 {id === 'statistics' && (
                   <>
-                    <p className="mb-6 text-lg font-medium">
+                    <p className="mb-6 text-lg font-semibold">
                       Statistical support can be provided at different levels.
                     </p>
 
@@ -233,19 +233,19 @@ export default function GraduateResearchServices() {
                     Editorial Reviews focus on the <span className="font-semibold">grammar, formatting, references, flow of content, sentence structure,
                     and chapter construction and completeness.</span> The detailed review will ensure you have satisfied all the
                     required protocols. Professional editing pleases committee members because it allows them to focus
-                    on the content. Editorial Reviews can be provided for your <span className="font-semibold">proposal, IRB application, and thesis -
-                    dissertation manuscript.</span> You want to be proud of your final thesis-dissertation, and a professional
+                    on the content. Editorial Reviews can be provided for your <span className="font-bold">Proposal, IRB application, and Thesis-Dissertation
+                    manuscript.</span> You want to be proud of your final thesis-dissertation, and a professional
                     Editorial Review sharpens the edges before publication 📓
                   </p>
                 )}
                 {id === 'graduate-writing-coach' && (
                   <div className="bg-primary/5 p-6 rounded-lg border border-primary/20">
                     <h3 className="text-lg font-semibold text-primary mb-3">
-                       ✨ Special Session: How to write like a nerd <span className="text-primary/80">(highly recommended)</span>
+                       ✨ Special Session: How to write like a nerd <span className="text-primary/90 italic">(highly recommended)</span>
                     </h3>
                     <p className="mb-4">
                       <span className="font-medium">1-hour crash course discussion</span> to
-                      learn how to <span className="font-semibold">read and write like a scientist</span>. I can provide strategies and approaches to improve and
+                      learn how to <span className="font-bold">read and write like a scientist</span>. I can provide strategies and approaches to improve and
                       refine your writing skills.
                     </p>
                     <p className="mb-4">
@@ -259,9 +259,9 @@ export default function GraduateResearchServices() {
                 {id === 'defense-preparation' && (
                   <>
                     <p className="mb-4">
-                      For most graduate students the oral presentations are <span className="font-semibold">frightening</span>, and for good reason. It is very
+                      For most graduate students the oral presentations are <span className="font-medium">frightening</span>, and for good reason. It is very
                       unsettling needing to defend your research to an audience of academics who will decide your fate. I can
-                      help you prepare a <span className="font-semibold">professional presentation</span>, and help you develop the talk. A professional digital
+                      help you prepare a <span className="font-bold">professional presentation</span>, and help you develop the talk. A professional digital
                       presentation and well-rehearsed verbal script helps ensure your committee is happy, and your defense
                       is successful. <span className="font-semibold">We can do reviews and practice defenses until you are fully comfortable with the material
                       and the process.</span>
