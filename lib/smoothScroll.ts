@@ -13,18 +13,15 @@ export const smoothScrollToElement = (elementId: string) => {
   }, 100)
 }
 
-export const smoothScrollToHash = () => {
+export const smoothScrollToHash = (hash: string) => {
   // Wait for the DOM to be ready
   setTimeout(() => {
-    if (window.location.hash) {
-      const id = window.location.hash.replace('#', '')
-      const element = document.getElementById(id)
-      if (element) {
-        element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        })
-      }
+    const element = document.getElementById(hash)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
     }
   }, 100)
 }
