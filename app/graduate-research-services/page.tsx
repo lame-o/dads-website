@@ -55,9 +55,9 @@ export default function GraduateResearchServices() {
       <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
         <h1 className="page-title">Graduate Research Services</h1>
 
-        <div className="page-section">
+        <div className="page-section -mx-8 md:-mx-16 bg-background/50 p-8 md:p-12">
           <h2 className="section-title text-center">How Can I Help?</h2>
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto">
             <p className="content-text text-lg leading-relaxed">
               I understand the challenges of seeking a <span className="font-semibold text-primary">graduate degree</span> while still needing to <span className="font-semibold text-primary">work</span> and maintain a 
               <span className="font-semibold text-primary"> personal home life</span>. Depending on your needs, I can be a steady voice to help you navigate any or all of 
@@ -70,7 +70,7 @@ export default function GraduateResearchServices() {
               and eventually <span className="font-semibold text-primary">graduation</span>. It's a challenging adventure you have embarked upon, few attempt it, and many who do, are not successful.
             </p>
             <p className="content-text text-xl font-medium text-primary/90 leading-relaxed">
-              <span className="bg-accent/20 block px-3 py-2 rounded-lg">You are a graduate research student determined to succeed and graduate. That's why you're here. 
+              <span className="bg-primary/20 block px-3 py-2 rounded-lg">You are a graduate research student determined to succeed and graduate. That's why you're here. 
               There are many ways I can be of help on your quest. You will not be farmed off to an unqualified 
               contractor, I will work with you directly, fully focused on helping you succeed.</span>
             </p>
