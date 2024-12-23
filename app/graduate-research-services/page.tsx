@@ -3,7 +3,7 @@
 
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Card, CardHeader, CardTitle, CardContent } from '@/app/components/ui/card'
 import { PageWrapper } from '@/app/components/PageWrapper'
@@ -12,6 +12,14 @@ import { Button } from "@/components/ui/button"
 import { SmoothLink } from "@/components/ui/smooth-link"
 
 export default function GraduateResearchServices() {
+  return (
+    <Suspense fallback={null}>
+      <GraduateResearchContent />
+    </Suspense>
+  )
+}
+
+function GraduateResearchContent() {
   const searchParams = useSearchParams()
   const services = [
     { id: 'office-hours', icon: Clock, title: 'Office Hours' },
