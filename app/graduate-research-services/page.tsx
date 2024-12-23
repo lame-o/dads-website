@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { Card, CardHeader, CardTitle, CardContent } from '@/app/components/ui/card'
 import { PageWrapper } from '@/app/components/PageWrapper'
 import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation, Clock } from 'lucide-react'
+import { Button } from '@/app/components/ui/button'
 
 export default function GraduateResearchServices() {
   const searchParams = useSearchParams()
@@ -53,7 +54,7 @@ export default function GraduateResearchServices() {
 
   return (
     <PageWrapper>
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 pb-4 pt-12">
         <h1 className="page-title">Graduate Research Services</h1>
 
         <div className="space-y-12">
@@ -289,6 +290,14 @@ export default function GraduateResearchServices() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-8">
+            <Button 
+              variant="default" 
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg hover:shadow-xl transition-all duration-300 py-10 text-lg"
+            >
+              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span> 🏃💨</a>
+            </Button>
           </div>
         </div>
       </div>

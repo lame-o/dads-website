@@ -16,6 +16,9 @@ export default function Footer() {
               />
               <h3 className="text-xl font-semibold text-primary">Graduate Research Coach</h3>
             </div>
+            <div className="mt-4 pl-[44px]">
+              <p className="text-muted-foreground italic">Feeling lost at sea?</p>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4 text-primary">Quick Links</h3>

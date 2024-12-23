@@ -23,32 +23,32 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <div className="space-y-16">
-        <section className="hero-section">
-          <div className="hero-content container mx-auto px-4">
-            <h1 className="hero-title">The Graduate Research Coach</h1>
-            <p className="hero-description mx-auto text-center">
-              Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help <span className="hero-highlight">empower you to completion</span>.
-            </p>
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
-              <div className="relative group">
-                <Image 
-                  src="/ryan-dwight.jpg" 
-                  alt="Ryan H. Dwight, PhD" 
-                  width={240} 
-                  height={240} 
-                  className="rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-105 ring-2 ring-primary/20 ring-offset-2 ring-offset-background" 
-                />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <div className="text-center md:text-left">
-                <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ryan H. Dwight, PhD</h2>
-                <p className="text-xl text-muted-foreground">Graduate Research Coach</p>
-              </div>
+      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)]">
+        <div className="max-w-6xl mx-auto px-4">
+          <h1 className="hero-title">The Graduate Research Coach</h1>
+          <p className="hero-description mx-auto text-center">
+            Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help <span className="hero-highlight">empower you to completion</span>.
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
+            <div className="relative group">
+              <Image 
+                src="/ryan-dwight.jpg" 
+                alt="Ryan H. Dwight, PhD" 
+                width={240} 
+                height={240} 
+                className="rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-105 ring-2 ring-primary/20 ring-offset-2 ring-offset-background" 
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ryan H. Dwight, PhD</h2>
+              <p className="text-xl text-muted-foreground">Graduate Research Coach</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="space-y-16 mt-16">
         <section className="bg-secondary/50 p-8 rounded-lg shadow-lg">
           <h2 className="text-4xl font-bold mb-8 text-center text-primary">How Can I Help?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -38,8 +38,8 @@ export default function CoachingFees() {
             </div>
 
             <div className="mt-8">
-              <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/75 shadow-lg hover:shadow-xl transition-all duration-300 w-full" asChild>
-                <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">Schedule a Free Consultation!</a>
+              <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg hover:shadow-xl transition-all duration-300 w-full py-8 text-lg" asChild>
+                <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation"><span className="font-semibold">Schedule a Free Consultation!</span></a>
               </Button>
             </div>
           </div>
