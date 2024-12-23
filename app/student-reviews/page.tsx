@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/app/components/ui/card'
 import { Star, User } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { PageWrapper } from '@/app/components/PageWrapper'
+import Image from 'next/image'
 
 type Review = {
   name: string;
@@ -93,7 +94,7 @@ function StarRating({ rating }: { rating: number }) {
       {[...Array(5)].map((_, i) => (
         <Star
           key={i}
-          className={`w-5 h-5 ${i < rating ? 'text-primary fill-primary' : 'text-muted-foreground'}`}
+          className={`w-5 h-5 ${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'}`}
         />
       ))}
     </div>
@@ -105,26 +106,50 @@ export default function Reviews() {
 
   return (
     <PageWrapper>
-      <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
-        <h1 className="page-title">Student Reviews</h1>
+      <div className="relative max-w-[1800px] mx-auto">
+        <div className="hidden xl:block absolute left-[calc(42%-700px)] top-32 w-[300px]">
+          <div className="bg-white rounded-lg shadow-xl p-4 transform -rotate-6 hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <Image
+              src="/PhD-Coach-Degree-Completion.jpg"
+              alt="PhD Coach Degree Completion, Dissertation Coach, Dissertation Editor"
+              width={300}
+              height={300}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+        <div className="hidden xl:block absolute right-[calc(37%-700px)] top-40 w-[400px]">
+          <div className="bg-white rounded-lg shadow-xl p-4 transform rotate-6 hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <Image
+              src="/Graduate-Research-Coach-Degree-Completion.jpg"
+              alt="Graduate Research Coach Degree Completion, Scientific Review, Graduate Writing Editor"
+              width={400}
+              height={400}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+        <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
+          <h1 className="page-title">Student Reviews</h1>
 
-        <RandomQuote reviews={reviews} />
+          <RandomQuote reviews={reviews} />
 
-        <div className="space-y-6">
-          {reviews.map((review, index) => (
-            <div key={index} className="page-section">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center">
-                  <div className="bg-muted rounded-full p-2 mr-3">
-                    <User className="w-6 h-6 text-primary" />
+          <div className="space-y-6">
+            {reviews.map((review, index) => (
+              <div key={index} className="page-section">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center">
+                    <div className="bg-muted rounded-full p-2 mr-3">
+                      <User className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="section-title text-xl">{review.name}</h3>
                   </div>
-                  <h3 className="section-title text-xl">{review.name}</h3>
+                  <StarRating rating={review.rating} />
                 </div>
-                <StarRating rating={review.rating} />
+                <p className="content-text italic">"{review.content}"</p>
               </div>
-              <p className="content-text italic">"{review.content}"</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </PageWrapper>
