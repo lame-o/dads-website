@@ -32,8 +32,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
             <div className="relative group">
               <Image 
-                src="/ryan-dwight.jpg" 
-                alt="Ryan H. Dwight, PhD" 
+                src="/ryan-dwight-Graduate-Research-Coach.jpg" 
+                alt="Ryan H. Dwight, PhD - The Graduate Research Coach" 
                 width={240} 
                 height={240} 
                 className="rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-105 ring-2 ring-primary/20 ring-offset-2 ring-offset-background" 

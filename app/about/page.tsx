@@ -8,13 +8,13 @@ export default function About() {
         <div className="w-full">
           <h1 className="page-title">About Me</h1>
 
-          <div className="mb-12">
+          <div className="mb-12 max-w-3xl mx-auto">
             <Image 
-              src="/ryan-dwight.jpg" 
-              alt="Ryan H. Dwight, PhD" 
+              src="/PhD-Graduate-Research-Coach.png" 
+              alt="PhD Graduate Research Coach" 
               width={1200} 
-              height={400} 
-              className="rounded-lg shadow-lg w-full h-[400px] object-cover object-center" 
+              height={600} 
+              className="rounded-lg shadow-lg w-full aspect-[2/1] object-cover" 
             />
           </div>
 
