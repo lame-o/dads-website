@@ -107,6 +107,7 @@ export default function Reviews() {
   return (
     <PageWrapper>
       <div className="relative max-w-[1800px] mx-auto">
+        {/* Desktop images */}
         <div className="hidden xl:block absolute left-[calc(42%-700px)] top-32 w-[300px]">
           <div className="bg-white rounded-lg shadow-xl p-4 transform -rotate-6 hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
             <Image
@@ -129,6 +130,33 @@ export default function Reviews() {
             />
           </div>
         </div>
+
+        {/* Mobile images */}
+        <div className="xl:hidden flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-8">
+          <div className="w-[200px] sm:w-[250px]">
+            <div className="bg-white rounded-lg shadow-xl p-4 transform -rotate-3 hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+              <Image
+                src="/PhD-Coach-Degree-Completion.jpg"
+                alt="PhD Coach Degree Completion, Dissertation Coach, Dissertation Editor"
+                width={250}
+                height={250}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="w-[250px] sm:w-[300px]">
+            <div className="bg-white rounded-lg shadow-xl p-4 transform rotate-3 hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+              <Image
+                src="/Graduate-Research-Coach-Degree-Completion.jpg"
+                alt="Graduate Research Coach Degree Completion, Scientific Review, Graduate Writing Editor"
+                width={300}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
           <h1 className="page-title">Student Reviews</h1>
 
