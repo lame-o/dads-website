@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 'use client'
 
 import { PageWrapper } from '@/app/components/PageWrapper'

@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
+
 'use client'
 
 import { Card, CardContent } from '@/app/components/ui/card'
