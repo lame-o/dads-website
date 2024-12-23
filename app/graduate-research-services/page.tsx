@@ -110,27 +110,25 @@ export default function GraduateResearchServices() {
           </nav>
 
           <div className="space-y-8">
-            <div className="page-section h-full">
-              <div className="content-text space-y-4 leading-relaxed w-full">
-                <Card id="office-hours" className="scroll-mt-24">
-                  <CardHeader>
-                    <CardTitle className="flex items-center space-x-3">
-                      <Clock className="w-6 h-6" />
-                      <span>Office Hours</span>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p>
-                      My virtual door is open for you to schedule a Zoom call anytime. It is best if I can receive information or
-                      questions before meeting so I can be prepared to help you work through the issue.
-                    </p>
-                  </CardContent>
-                </Card>
+            <div key="office-hours" id="office-hours" className="relative p-8 rounded-lg border border-gray-300 bg-white">
+              <div className="absolute top-6 left-6">
+                <div className="p-3 rounded-full bg-secondary">
+                  <Clock className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              <div>
+                <h2 className="section-title pl-20">Office Hours</h2>
+                <div className="content-text">
+                  <p>
+                    My virtual door is open for you to schedule a Zoom call anytime. It is best if I can receive information or
+                    questions before meeting so I can be prepared to help you work through the issue.
+                  </p>
+                </div>
               </div>
             </div>
 
             {services.slice(1).map(({ id, icon: Icon, title }) => (
-              <div key={id} id={id} className="page-section h-full relative group">
+              <div key={id} id={id} className="page-section h-full relative group transition-all duration-300 hover:shadow-xl hover:shadow-gray-400/75">
                 <div className="absolute top-6 left-6">
                   <div className="p-3 rounded-full bg-secondary transition-all duration-300 group-hover:bg-primary/10 group-hover:scale-110 transform relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:animate-shimmer" />

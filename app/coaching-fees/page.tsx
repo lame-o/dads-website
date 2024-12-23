@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 export default function CoachingFees() {
   return (
     <PageWrapper>
-      <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
+      <div className="space-y-12 max-w-6xl mx-auto px-4 py-12">
         <h1 className="page-title">Coaching Fees</h1>
 
         <div className="page-section">
@@ -32,14 +32,14 @@ export default function CoachingFees() {
             <div className="bg-primary/20 p-6 rounded-lg mt-12">
               <h2 className="text-2xl font-semibold mb-4 text-primary">Earn Extra Credit! 🎉</h2>
               <div className="space-y-3 text-lg">
-                <p><span className="font-semibold">Refer a friend</span> = 1-hour free coaching ($100 value), and earn a Student of the Week smiley sticker 😺</p>
-                <p><span className="font-semibold">10-hours of coaching</span> = the 11th hour is free (10% discount), and earn a Super Student Star 🌟</p>
+                <p><span className="font-semibold">Refer a friend</span> = 1-hour free coaching ($100 value), and earn a Student of the Week smiley sticker <span className="text-2xl">😺</span></p>
+                <p><span className="font-semibold">10-hours of coaching</span> = the 11th hour is free (10% discount), and earn a Super Student Star <span className="text-2xl">🌟</span></p>
               </div>
             </div>
 
-            <div className="mt-8 text-center">
-              <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                <a href="mailto:ryanhdwight@yahoo.com">Free Consultation</a>
+            <div className="mt-8">
+              <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/75 shadow-lg hover:shadow-xl transition-all duration-300 w-full" asChild>
+                <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">Schedule a Free Consultation!</a>
               </Button>
             </div>
           </div>

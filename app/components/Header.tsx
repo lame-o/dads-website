@@ -51,9 +51,9 @@ export default function Header() {
           </ul>
           <Button 
             variant="default" 
-            className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-accent text-accent-foreground hover:bg-accent/75 shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Schedule Consultation
+            <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">Schedule Consultation</a>
           </Button>
         </nav>
       </div>
