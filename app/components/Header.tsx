@@ -11,10 +11,12 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet"
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   const navigationItems = [
     { name: 'Home', path: '/' },
@@ -33,7 +35,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handleNavigation = (path: string) => {
+  const handleNavigation = () => {
     setIsOpen(false)
   }
 
@@ -82,7 +84,7 @@ export default function Header() {
                       key={item.name}
                       href={item.path}
                       className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                      onClick={() => handleNavigation(item.path)}
+                      onClick={handleNavigation}
                     >
                       {item.name}
                     </Link>

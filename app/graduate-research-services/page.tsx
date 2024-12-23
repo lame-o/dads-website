@@ -5,7 +5,8 @@ import { useSearchParams } from 'next/navigation'
 import { Card, CardHeader, CardTitle, CardContent } from '@/app/components/ui/card'
 import { PageWrapper } from '@/app/components/PageWrapper'
 import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation, Clock } from 'lucide-react'
-import { Button } from '@/app/components/ui/button'
+import { Button } from "@/components/ui/button"
+import { SmoothLink } from "@/components/ui/smooth-link"
 
 export default function GraduateResearchServices() {
   const searchParams = useSearchParams()

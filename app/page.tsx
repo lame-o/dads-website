@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { SmoothLink } from '@/components/ui/smooth-link'
 import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, PresentationIcon as PresentationChart, Clock } from 'lucide-react'
 import { useEffect } from 'react'

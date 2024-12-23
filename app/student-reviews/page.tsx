@@ -81,7 +81,7 @@ function RandomQuote({ reviews }: { reviews: Review[] }) {
     <div className="page-section bg-gradient-to-br from-background to-muted p-6 rounded-lg mb-8">
       <style>{fadeInOut}</style>
       <div key={key} className={`${fadeClass} content-text italic text-center`}>
-        "{quote.content.split(' ').slice(0, 30).join(' ')}..."
+        "&ldquo;{quote.content.split(' ').slice(0, 30).join(' ')}...&rdquo;"
         <div className="mt-2 font-semibold text-right text-primary">- {quote.name}</div>
       </div>
     </div>
@@ -176,7 +176,7 @@ export default function Reviews() {
                     <StarRating rating={review.rating} />
                   </div>
                 </div>
-                <p className="content-text italic">"{review.content}"</p>
+                <p className="content-text italic">&ldquo;{review.content}&rdquo;</p>
               </div>
             ))}
           </div>

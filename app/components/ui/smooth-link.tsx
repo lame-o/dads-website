@@ -3,13 +3,12 @@
 import Link from "next/link"
 import { smoothScrollToHash } from "@/lib/smoothScroll"
 
-interface SmoothLinkProps {
+interface SmoothLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string
   children: React.ReactNode
-  [key: string]: any
 }
 
-export function SmoothLink({ href, children, ...props }: SmoothLinkProps) {
+export default function SmoothLink({ href, children, ...props }: SmoothLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const hash = href.split("#")[1]
