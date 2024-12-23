@@ -165,14 +165,16 @@ export default function Reviews() {
           <div className="space-y-6">
             {reviews.map((review, index) => (
               <div key={index} className="page-section">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center">
-                    <div className="bg-muted rounded-full p-2 mr-3">
+                <div className="flex items-baseline justify-between mb-4">
+                  <div className="flex items-baseline gap-3">
+                    <div className="bg-muted rounded-full p-2 flex-shrink-0 flex items-center">
                       <User className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="section-title text-xl">{review.name}</h3>
+                    <h3 className="section-title text-xl pb-2">{review.name}</h3>
                   </div>
-                  <StarRating rating={review.rating} />
+                  <div className="flex-shrink-0 flex items-baseline">
+                    <StarRating rating={review.rating} />
+                  </div>
                 </div>
                 <p className="content-text italic">"{review.content}"</p>
               </div>
