@@ -4,9 +4,25 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { useState, useEffect } from 'react'
+import { Menu } from 'lucide-react'
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const navigationItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Graduate Research Services', path: '/graduate-research-services' },
+    { name: 'About Me', path: '/about' },
+    { name: 'Coaching Fees', path: '/coaching-fees' },
+    { name: 'Student Reviews', path: '/student-reviews' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +32,10 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const handleNavigation = (path: string) => {
+    setIsOpen(false)
+  }
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent'}`}>
@@ -28,17 +48,12 @@ export default function Header() {
             height={40}
             className="w-10 h-10"
           />
-          <span>GraduateResearchCoach.com</span>
+          <span className="hidden sm:inline">GraduateResearchCoach.com</span>
+          <span className="sm:hidden">GRC</span>
         </Link>
         <nav className="flex items-center space-x-6">
           <ul className="hidden md:flex space-x-6">
-            {[
-              { name: 'Home', path: '/' },
-              { name: 'Graduate Research Services', path: '/graduate-research-services' },
-              { name: 'About Me', path: '/about' },
-              { name: 'Coaching Fees', path: '/coaching-fees' },
-              { name: 'Student Reviews', path: '/student-reviews' },
-            ].map((item) => (
+            {navigationItems.map((item) => (
               <li key={item.name}>
                 <Link 
                   href={item.path}
@@ -49,6 +64,34 @@ export default function Header() {
               </li>
             ))}
           </ul>
+          
+          {/* Mobile Menu */}
+          <div className="md:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="mr-2">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetTitle className="text-primary text-lg font-bold mb-4">Graduate Research Coach</SheetTitle>
+                <div className="flex flex-col space-y-4">
+                  {navigationItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.path}
+                      className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                      onClick={() => handleNavigation(item.path)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+
           <Button 
             variant="default" 
             className="bg-accent text-accent-foreground hover:bg-accent/75 shadow-lg hover:shadow-xl transition-all duration-300"
