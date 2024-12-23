@@ -10,6 +10,7 @@ import { PageWrapper } from '@/app/components/PageWrapper'
 import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation, Clock } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { SmoothLink } from "@/components/ui/smooth-link"
+import Image from 'next/image'
 
 export default function GraduateResearchServices() {
   return (

@@ -24,8 +24,17 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)]">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[600px]">
+        <Image
+          src="/Dissertation-Coach.jpg"
+          alt="Dissertation Coach Background"
+          fill
+          className="object-cover opacity-100 object-[center_7%]"
+          sizes="100vw"
+          quality={100}
+          priority
+        />
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
           <h1 className="hero-title">The Graduate Research Coach</h1>
           <p className="hero-description mx-auto text-center">
             Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help <span className="hero-highlight">empower you to completion</span>.
