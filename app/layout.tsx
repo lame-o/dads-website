@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Graduate Research Coach',
   description: 'Graduate Research Coach - Phd Coach, graduate writing coach, dissertation editor, graduate writing editor, degree completion, scientific review',
   icons: {
-    icon: '/life-preserver.png',
+    icon: '/Graduate-Research-Coach.png',
   },
 }
 

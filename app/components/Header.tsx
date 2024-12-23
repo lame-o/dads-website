@@ -42,8 +42,8 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-primary hover:text-accent transition-colors">
           <Image
-            src="/life-preserver.png"
-            alt="Life Preserver"
+            src="/Graduate-Research-Coach.png"
+            alt="Graduate Research Coach - Phd Coach, graduate writing coach, dissertation editor, graduate writing editor, degree completion, scientific review"
             width={40}
             height={40}
             className="w-10 h-10"

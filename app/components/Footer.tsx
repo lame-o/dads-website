@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <Image
-                src="/life-preserver.png"
-                alt="Life Preserver"
+                src="/Graduate-Research-Coach.png"
+                alt="Graduate Research Coach - Phd Coach, graduate writing coach, dissertation editor, graduate writing editor, degree completion, scientific review"
                 width={32}
                 height={32}
               />
