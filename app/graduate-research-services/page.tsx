@@ -280,14 +280,13 @@ function GraduateResearchContent() {
                           help you prepare a <span className="font-bold">professional presentation</span>, and help you develop the talk. A professional digital
                           presentation and well-rehearsed verbal script helps ensure your committee is happy, and your defense
                           is successful. <span className="font-semibold">We can do reviews and practice defenses until you are fully comfortable with the material
-                          and the process.</span>
+                          and the process.</span> In these power sessions, you will learn how to share the news of your excellent research, without losing your audience. All
+                          professional development skills learned will be applicable later in your personal and professional life.
                         </p>
                         <div className="bg-primary/5 p-6 rounded-lg border border-primary/20 mb-4">
                           <p>
                             I have developed a helpful <span className="font-semibold text-primary">Graduate Defense Guide</span> 🛡️ with step-by-step discussion on how to construct a
-                            professional presentation, and how to present and defend your research. In these power sessions, you
-                            will learn how to share the news of your excellent research, without losing your audience. All
-                            professional development skills learned will be applicable later in your personal and professional life.
+                            professional presentation, and how to present and defend your research. 
                           </p>
                         </div>
                       </>
@@ -310,7 +309,7 @@ function GraduateResearchContent() {
               variant="default" 
               className="w-full bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg hover:shadow-xl transition-all duration-300 py-10 text-lg"
             >
-              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span> 🏃💨</a>
+              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span></a>
             </Button>
           </div>
         </div>
