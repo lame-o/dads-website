@@ -161,7 +161,7 @@ export default function Reviews() {
         </div>
 
         <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
-          <h1 className="page-title">Student Reviews</h1>
+          <h1 className="page-title">Graduate Student Reviews</h1>
 
           <RandomQuote reviews={reviews} />
 

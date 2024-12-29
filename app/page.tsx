@@ -37,7 +37,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <h1 className="hero-title text-5xl md:text-7xl">Graduate Research Coach</h1>
           <p className="hero-description mx-auto text-center text-xl md:text-2xl max-w-4xl">
-            Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help support you to completion.
+            Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help support you to earn your degree.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mt-8">
             <div className="relative group">
@@ -51,7 +51,7 @@ export default function Home() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-3xl font-semibold mb-2 bg-white bg-clip-text text-transparent">Ryan H. Dwight, PhD</h2>
+              <h2 className="text-5xl font-semibold mb-2 bg-white bg-clip-text text-transparent pb-1">Ryan H. Dwight, PhD</h2>
               <p className="text-2xl text-muted-foreground">Graduate Research Coach</p>
             </div>
           </div>

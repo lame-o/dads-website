@@ -21,12 +21,11 @@ export default function CoachingFees() {
 
             <p className="text-lg leading-relaxed">
               You choose the Graduate Research Services you want to take advantage of, and <span className="font-semibold">we agree on time/coaching fees before starting. Coaching
-              fees are paid before work is conducted.</span> If extra time is needed for a review, I'll ask your approval
-              before proceeding, so no surprises.
+              fees are paid before work is conducted.</span> 
             </p>
 
             <p className="text-lg leading-relaxed">
-              I'm flexible to meet on your schedule, and my review turn-around times are fast and comprehensive (better than your committee I bet).
+              We will meet on your schedule, and my review turn-around times are fast and comprehensive (better than your committee I bet).
               Contact me if you want an experienced Graduate Research Coach, PhD advisor or any of the Graduate Research Services I can
               provide to help you get that degree in your hands! 
             </p>
