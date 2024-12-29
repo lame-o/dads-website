@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { PageWrapper } from '@/app/components/PageWrapper'
+import { Linkedin, Globe } from 'lucide-react'
 
 export default function About() {
   return (
@@ -20,6 +21,26 @@ export default function About() {
 
           <div className="space-y-12">
             <div className="page-section relative">
+              <div className="absolute top-4 right-4 flex gap-4">
+                <a 
+                  href="https://ryandwight.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 transition-colors flex flex-col items-center"
+                >
+                  <Globe className="w-7 h-7" />
+                  <span className="text-xs mt-1">Website</span>
+                </a>
+                <a 
+                  href="https://linkedin.com/in/ryan-dwight-04155429" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 transition-colors flex flex-col items-center"
+                >
+                  <Linkedin className="w-7 h-7" />
+                  <span className="text-xs mt-1">LinkedIn</span>
+                </a>
+              </div>
               <div className="flex flex-col md:flex-row items-start gap-8">
                 <div>
                   <h2 className="section-title">Ryan H. Dwight, PhD</h2>
