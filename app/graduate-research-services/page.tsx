@@ -74,10 +74,10 @@ function GraduateResearchContent() {
           <div className="page-section">
             <div className="content-text space-y-4 leading-relaxed w-full">
               <p className="text-lg leading-relaxed">
-                It is <span className="font-semibold text-primary">extremely challenging</span> to earn a graduate degree while still maintaining a <span className="font-semibold text-primary">job and personal life</span>.
+                It is <span className="font-semibold text-primary">extremely challenging</span> to earn a graduate degree while still maintaining a <span className="font-semibold text-primary">job and personal life</span> 🤹‍♀️
                 Would you like to have a <span className="font-semibold bg-primary/10 px-1 rounded">personal coach</span> who is interested in your research and willing to help you
                 succeed? I can provide a <span className="font-semibold italic">steady, reliable voice</span> to help you navigate the stages of research for your
-                <span className="text-primary"> thesis-dissertation</span> 📚
+                <span className="text-primary"> thesis-dissertation</span> 📜
               </p>
               <p className="text-lg leading-relaxed">
                 The journey is long - beginning from
@@ -112,12 +112,13 @@ function GraduateResearchContent() {
           </div>
 
           <nav className="quick-nav" aria-label="Quick navigation">
-            {services.map(({ id, title }) => (
+            {services.map(({ id, title, icon: Icon }) => (
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className="quick-nav-button"
+                className="quick-nav-button flex items-center gap-2"
               >
+                <Icon className="w-4 h-4" />
                 {title}
               </button>
             ))}
@@ -164,7 +165,7 @@ function GraduateResearchContent() {
                         <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                           <h3 className="text-lg font-semibold text-primary mb-3">✨ Special Session: The Big-Picture <span className="text-primary/90 italic">(highly recommended)</span></h3>
                           <p className="mb-3">
-                            <span className="font-semibold">(2-hour package deal)</span> We will have a comprehensive big-picture discussion on conducting graduate level
+                            <span className="font-medium">1-hour package deal</span> We will have a comprehensive big-picture discussion on conducting graduate level
                             research, and how to map your path to graduation. We will explore the process and procedures of
                             conceiving and conducting valid research.
                           </p>
@@ -227,8 +228,8 @@ function GraduateResearchContent() {
                               I can also conduct <span className="font-semibold">quantitative data analysis services</span> for you. Descriptives, cross-tabs, t-tests,
                               correlations, generation of tables of with p-values, CI's, etc. can all be provided to you in APA format.
                             </p>
-                            <p className="text-sm bg-primary/10 p-2 rounded">
-                              <span className="font-medium">Note:</span> Data Analysis Services are billed at $200 per hour.
+                            <p className="text-base bg-primary/10 p-2 rounded text-center">
+                              <span className="font-bold">Note:</span> <span className="font-semibold">Data Analysis Services are billed at $200 per hour.</span>
                             </p>
                           </div>
 
@@ -237,7 +238,7 @@ function GraduateResearchContent() {
                             <p>
                               I can assist in the crucial step of <span className="font-semibold">accurately interpreting your results</span>, and how to
                               best present them in your thesis-dissertation. After the long process of constructing and executing a
-                              research study, it is obligatory to <span className="font-semibold">accurately communicate your results and conclusions</span>.
+                              research study, it is <span className="font-semibold">critical to accurately communicate your results and conclusions</span>.
                             </p>
                           </div>
                         </div>
@@ -256,7 +257,7 @@ function GraduateResearchContent() {
                     {id === 'graduate-writing-coach' && (
                       <div className="bg-primary/5 p-6 rounded-lg border border-primary/20">
                         <h3 className="text-lg font-semibold text-primary mb-3">
-                           ✨ Special Session: How to write like a nerd <span className="text-primary/90 italic">(highly recommended)</span>
+                           ✨ Special Session: How to Write Like a Nerd <span className="text-primary/90 italic">(highly recommended)</span>
                         </h3>
                         <p className="mb-4">
                           <span className="font-medium">1-hour crash course discussion</span> to

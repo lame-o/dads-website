@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[600px]">
+      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[500px]">
         <Image
           src="/Dissertation-Coach.jpg"
           alt="Dissertation Coach Background"
@@ -35,24 +35,24 @@ export default function Home() {
           priority
         />
         <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <h1 className="hero-title">Graduate Research Coach</h1>
-          <p className="hero-description mx-auto text-center">
+          <h1 className="hero-title text-5xl md:text-7xl">Graduate Research Coach</h1>
+          <p className="hero-description mx-auto text-center text-xl md:text-2xl max-w-4xl">
             Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help support you to completion.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mt-8">
             <div className="relative group">
               <Image 
                 src="/ryan-dwight-Graduate-Research-Coach.jpg" 
                 alt="Ryan H. Dwight, PhD - The Graduate Research Coach" 
-                width={240} 
-                height={240} 
+                width={220} 
+                height={220} 
                 className="rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-105 ring-2 ring-primary/20 ring-offset-2 ring-offset-background" 
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ryan H. Dwight, PhD</h2>
-              <p className="text-xl text-muted-foreground">Graduate Research Coach</p>
+              <h2 className="text-3xl font-semibold mb-2 bg-white bg-clip-text text-transparent">Ryan H. Dwight, PhD</h2>
+              <p className="text-2xl text-muted-foreground">Graduate Research Coach</p>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
             </p>
             <p className="text-lg leading-relaxed">
               Students appreciate my teaching style as I synthesize complex research concepts and explain them in a
-              straightforward manner (<SmoothLink href="/student-reviews" className="text-accent hover:underline">Student Reviews</SmoothLink>). I am an educator by nature and am eager to help anyone
+              straightforward manner (<SmoothLink href="/student-reviews" className="text-accent underline">Student Reviews</SmoothLink>). I am an educator by nature and am eager to help anyone
               who is hungry for knowledge and wanting to move forward. I have successfully mentored students from
               around the world, and I'm comfortable working with everyone. If you're a researcher in the fields of
               <span className="font-semibold"> health 💊</span>, <span className="font-semibold"> science 🧪</span>, <span className="font-semibold"> economics 📈</span>, or <span className="font-semibold"> education 🎓</span>, we can work together!
