@@ -6,7 +6,7 @@ import { ScrollToTop } from './components/ScrollToTop'
 
 export const metadata: Metadata = {
   title: 'Graduate Research Coach',
-  description: 'Graduate Research Coach - Phd Coach, graduate writing coach, dissertation editor, graduate writing editor, degree completion, scientific review',
+  description: 'Graduate Research Coach - Phd Coach, graduate writing coach, dissertation editor, graduate writing editor, degree completion, scientific review, PhD Suport, Graduate Supoprt',
   icons: {
     icon: '/Graduate-Research-Coach.png',
   },
