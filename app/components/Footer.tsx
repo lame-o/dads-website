@@ -61,7 +61,7 @@ export default function Footer() {
                   Schedule a Free Consultation
                 </a>
               </p>
-              <p>Email: ryanhdwight@yahoo.com</p>
+              <p></p>
             </div>
           </div>
         </div>
