@@ -34,6 +34,9 @@ export default function Home() {
           quality={100}
           priority
         />
+        <div className="absolute left-[10%] top-1/3 transform -rotate-12 text-white text-3xl md:text-4xl font-semibold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+          Are you lost<br />at sea?
+        </div>
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <h1 className="hero-title text-5xl md:text-7xl">Graduate Research Coach</h1>
           <p className="hero-description mx-auto text-center text-xl md:text-2xl max-w-4xl">
