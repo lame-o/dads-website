@@ -26,7 +26,7 @@ export default function Home() {
     <PageWrapper>
       <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[500px]">
         <Image
-          src="/Dissertation-Coach.jpg"
+          src="/Dissertation-Coach.png"
           alt="Dissertation Coach Background"
           fill
           className="object-cover opacity-100 object-[center_7%]"
@@ -34,7 +34,7 @@ export default function Home() {
           quality={100}
           priority
         />
-        <div className="absolute left-[10%] top-1/3 transform -rotate-12 text-white text-3xl md:text-4xl font-semibold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+        <div className="absolute left-[10%] top-1/2 transform -rotate-[20deg] text-white text-4xl md:text-5xl font-semibold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
           Are you lost<br />at sea?
         </div>
         <div className="max-w-6xl mx-auto px-4 relative z-10">
