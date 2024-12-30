@@ -4,12 +4,19 @@
 
 import { PageWrapper } from '@/app/components/PageWrapper'
 import { Button } from '@/components/ui/button'
+import { FadeText } from '@/components/ui/fade-text'
 
 export default function CoachingFees() {
   return (
     <PageWrapper>
       <div className="space-y-12 max-w-6xl mx-auto px-4 py-12">
-        <h1 className="page-title">Coaching Fees</h1>
+        <div className="mb-8 px-4 text-center">
+          <FadeText 
+            text="Coaching Fees"
+            direction="down"
+            className="page-title !m-0 !p-0 inline-block"
+          />
+        </div>
 
         <div className="page-section">
           <div className="space-y-6">

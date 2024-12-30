@@ -8,6 +8,8 @@ import { Star, User } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { PageWrapper } from '@/app/components/PageWrapper'
 import Image from 'next/image'
+import { FadeText } from "@/components/ui/fade-text";
+
 
 type Review = {
   name: string;
@@ -161,7 +163,13 @@ export default function Reviews() {
         </div>
 
         <div className="space-y-12 max-w-4xl mx-auto px-4 py-12">
-          <h1 className="page-title">Graduate Student Reviews</h1>
+          <div className="mb-8 px-4 text-center">
+            <FadeText 
+              text="Graduate Student Reviews"
+              direction="down"
+              className="page-title !m-0 !p-0 inline-block"
+            />
+          </div>
 
           <RandomQuote reviews={reviews} />
 

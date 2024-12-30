@@ -1,13 +1,20 @@
 import Image from 'next/image'
 import { PageWrapper } from '@/app/components/PageWrapper'
 import { Linkedin, Globe } from 'lucide-react'
+import { FadeText } from "@/components/ui/fade-text";
 
 export default function About() {
   return (
     <PageWrapper>
       <div className="flex gap-8 max-w-6xl mx-auto px-4 py-12">
         <div className="w-full">
-          <h1 className="page-title">About Me</h1>
+          <div className="mb-8 px-4 text-center">
+            <FadeText 
+              text="About Me"
+              direction="down"
+              className="page-title !m-0 !p-0 inline-block"
+            />
+          </div>
 
           <div className="mb-12 max-w-3xl mx-auto">
             <Image 

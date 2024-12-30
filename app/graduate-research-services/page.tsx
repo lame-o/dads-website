@@ -11,6 +11,7 @@ import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation
 import { Button } from "@/components/ui/button"
 import { SmoothLink } from "@/components/ui/smooth-link"
 import Image from 'next/image'
+import { FadeText } from "@/components/ui/fade-text";
 
 export default function GraduateResearchServices() {
   return (
@@ -68,8 +69,13 @@ function GraduateResearchContent() {
   return (
     <PageWrapper>
       <div className="max-w-6xl mx-auto px-4 pb-4 pt-12">
-        <h1 className="page-title">Graduate Research Services</h1>
-
+        <div className="mb-8 px-4 text-center">
+          <FadeText 
+            text="Graduate Research Services"
+            direction="down"
+            className="page-title !m-0 !p-0 inline-block"
+          />
+        </div>
         <div className="space-y-12">
           <div className="page-section">
             <div className="content-text space-y-4 leading-relaxed w-full">
