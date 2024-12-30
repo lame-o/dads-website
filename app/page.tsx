@@ -8,6 +8,7 @@ import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, Presentation
 import { useEffect } from 'react'
 import { smoothScrollToHash } from '@/lib/smoothScroll'
 import { PageWrapper } from '@/app/components/PageWrapper'
+import TypingAnimation from "@/components/ui/typing-animation";
 
 export default function Home() {
   useEffect(() => {
@@ -34,8 +35,11 @@ export default function Home() {
           quality={100}
           priority
         />
-        <div className="absolute left-[10%] top-1/2 transform -rotate-[20deg] text-white text-4xl md:text-5xl font-semibold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
-          Are you lost<br />at sea?
+        <div className="absolute left-[10%] top-[40%] transform -rotate-[20deg] text-white text-7xl md:text-8xl font-semibold italic" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+          <div className="flex flex-col gap-0 leading-[0.7]">
+            <TypingAnimation duration={100}>Are you lost</TypingAnimation>
+            <TypingAnimation duration={100} delay={1200}>at sea?</TypingAnimation>
+          </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <h1 className="hero-title text-5xl md:text-7xl">Graduate Research Coach</h1>
