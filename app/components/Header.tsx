@@ -61,7 +61,9 @@ export default function Header() {
               <li key={item.name}>
                 <Link 
                   href={item.path}
-                  className="text-foreground hover:text-primary transition-colors px-2 py-1 rounded"
+                  className={`text-foreground hover:text-primary transition-colors px-3 py-2 rounded-md ${
+                    pathname === item.path ? 'bg-accent/10 text-primary' : ''
+                  }`}
                 >
                   {item.name}
                 </Link>
