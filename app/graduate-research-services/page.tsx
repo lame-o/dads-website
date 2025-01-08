@@ -83,7 +83,7 @@ function GraduateResearchContent() {
                 It is <span className="font-semibold text-primary">extremely challenging</span> to earn a graduate degree while still maintaining a <span className="font-semibold text-primary">job and personal life</span> 🤹‍♀️
                 Would you like to have a <span className="font-semibold bg-primary/10 px-1 rounded">personal coach</span> who is interested in your research and willing to help you
                 succeed? I can provide a <span className="font-semibold italic">steady, reliable voice</span> to help you navigate the stages of research for your
-                <span className="text-primary"> thesis-dissertation</span> 📜
+                <span className="text-primary"> thesis-dissertation.</span> 📜
               </p>
               <p className="text-lg leading-relaxed">
                 The journey is long - beginning from
@@ -166,12 +166,12 @@ function GraduateResearchContent() {
                           research</span>, while managing all the other stuff. I can share effective <span className="font-semibold">organizational and time management
                           strategies</span> to help guide and motivate you to succeed. <span className="font-medium">Goal setting, outlining, mapping, scheduled
                           meetings, and procrastination avoidance</span> can be a focus. I can also be an empathetic ear for venting
-                          about your Chair.
+                          about your committee.
                         </p>
                         <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                           <h3 className="text-lg font-semibold text-primary mb-3">✨ Special Session: The Big-Picture <span className="text-primary/90 italic">(highly recommended)</span></h3>
                           <p className="mb-3">
-                            <span className="font-medium">1-hour package deal</span> We will have a comprehensive big-picture discussion on conducting graduate level
+                            <span className="font-bold">1-hour package deal</span> We will have a comprehensive big-picture discussion on conducting graduate level
                             research, and how to map your path to graduation. We will explore the process and procedures of
                             conceiving and conducting valid research.
                           </p>
@@ -191,7 +191,7 @@ function GraduateResearchContent() {
                           Scientific reviews of your <span className="font-medium">proposal or thesis-dissertation</span> ensure all required components are <span className="font-medium">valid,
                           complete, and clearly presented</span>. Scientific Review at the <span className="text-primary font-bold">Proposal stage</span> focuses on the <span className="font-medium">research
                           methods section</span> (Intro and Lit Review are not reviewed for this). Individual sections of the methods are
-                          reviewed including the proposed statistical tests.
+                          reviewed, including the proposed statistical tests.
                         </p>
                         <p className="mb-4">
                           Scientific Review at the <span className="text-primary font-bold">Thesis-Dissertation phase </span> 
@@ -266,7 +266,7 @@ function GraduateResearchContent() {
                            ✨ Special Session: How to Write Like a Nerd <span className="text-primary/90 italic">(highly recommended)</span>
                         </h3>
                         <p className="mb-4">
-                          <span className="font-medium">1-hour crash course discussion</span> to
+                          <span className="font-bold">1-hour crash course</span> discussion to
                           learn how to <span className="font-bold">read and write like a scientist</span>. I can provide strategies and approaches to improve and
                           refine your writing skills.
                         </p>

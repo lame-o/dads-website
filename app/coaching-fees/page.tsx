@@ -28,7 +28,7 @@ export default function CoachingFees() {
 
             <p className="text-lg leading-relaxed">
               You choose the Graduate Research Services you want to take advantage of, and <span className="font-semibold">we agree on time/coaching fees before starting. Coaching
-              fees are paid before work is conducted.</span> 
+              fees are to be paid before each phase.</span> 
             </p>
 
             <p className="text-lg leading-relaxed">
