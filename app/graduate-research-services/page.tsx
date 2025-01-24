@@ -313,9 +313,13 @@ function GraduateResearchContent() {
           <div className="mt-8">
             <Button 
               variant="default" 
-              className="w-full bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg hover:shadow-xl transition-all duration-300 py-10 text-lg"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/85 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3),0_4px_6px_-4px_rgba(0,0,0,0.3)] transition-all duration-300 py-8 md:py-10 text-lg"
+              asChild
             >
-              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span></a>
+              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">
+                <span className="hidden md:inline">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span></span>
+                <span className="md:hidden">🏁 Free 30-Minute Consultation</span>
+              </a>
             </Button>
           </div>
         </div>
