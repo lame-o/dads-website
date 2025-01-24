@@ -60,12 +60,12 @@ export default function Header() {
         </div>
         <div className="flex-1 flex justify-end">
           <nav className="flex items-center">
-            <ul className="hidden lg:flex items-center justify-end gap-2 md:gap-4 xl:gap-6">
+            <ul className="hidden lg:flex items-center justify-between gap-6 xl:gap-8">
               {navigationItems.map((item) => (
                 <li key={item.name} className="shrink-0">
                   <Link 
                     href={item.path}
-                    className={`text-foreground hover:text-primary transition-colors px-2 md:px-3 py-2 rounded-md text-sm md:text-base whitespace-nowrap ${
+                    className={`text-foreground hover:text-primary transition-colors px-3 py-2 rounded-md text-sm xl:text-base whitespace-nowrap ${
                       pathname === item.path ? 'bg-accent/10 text-primary' : ''
                     }`}
                   >

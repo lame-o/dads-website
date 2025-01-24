@@ -5,18 +5,26 @@
 import Image from 'next/image'
 import { SmoothLink } from '@/components/ui/smooth-link'
 import { BookOpen, FlaskConical, BarChart, Glasses, Edit, BookType, PresentationIcon as PresentationChart, Clock } from 'lucide-react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { smoothScrollToHash } from '@/lib/smoothScroll'
 import { PageWrapper } from '@/app/components/PageWrapper'
 import TypingAnimation from "@/components/ui/typing-animation";
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
+    setIsMounted(true);
     const hash = window.location.hash.replace('#', '')
     if (hash) {
       smoothScrollToHash(hash)
     }
   }, [])
+
+  if (!isMounted) {
+    return null; // or a loading spinner
+  }
 
   const getBorderColor = (index: number) => {
     const colors = ['border-cyan-200', 'border-teal-200', 'border-blue-200', 'border-green-200', 'border-emerald-200', 'border-sky-200', 'border-indigo-200'];
@@ -25,48 +33,41 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[500px]">
+      <section className="hero-section w-screen relative -mx-[calc((100vw-100%)/2)] min-h-[450px]">
         <Image
           src="/Dissertation-Coach.png"
           alt="Dissertation Coach Background"
           fill
-          className="object-cover opacity-100 object-[center_7%]"
+          className="object-cover opacity-100 object-[center_22%]"
           sizes="100vw"
           quality={100}
           priority
         />
-        <div className="absolute left-[10%] top-[40%] transform -rotate-[20deg] text-white font-semibold italic hidden md:block" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)', fontSize: 'clamp(2rem, 3vw, 3rem)' }}>
-          <div className="flex flex-col gap-0 leading-[0.7]">
-            <TypingAnimation className="!text-inherit">Are you lost</TypingAnimation>
-            <TypingAnimation className="!text-inherit" duration={100} delay={1200}>at sea?</TypingAnimation>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 relative z-10 flex flex-col items-center gap-8 md:gap-12">
           <h1 className="hero-title text-5xl md:text-7xl">Graduate Research Coach</h1>
-          <p className="hero-description mx-auto text-center text-xl md:text-2xl max-w-4xl">
-            Are you a graduate student looking for guidance to complete your degree? At any level of graduate research, I can help support you to earn your degree.
+          <p className="hero-description text-center text-xl md:text-2xl max-w-4xl">
+            Are you a graduate student looking for guidance to complete your degree? I can help support you to earn your degree at any level of graduate research.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mt-8">
-            <div className="relative group">
-              <Image 
-                src="/ryan-dwight-Graduate-Research-Coach.jpg" 
-                alt="Ryan H. Dwight, PhD - The Graduate Research Coach" 
-                width={220} 
-                height={220} 
-                className="rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-105 ring-2 ring-primary/20 ring-offset-2 ring-offset-background" 
-              />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="text-center md:text-left">
-              <h2 className="text-5xl font-semibold mb-2 bg-white bg-clip-text text-transparent pb-1">Ryan H. Dwight, PhD</h2>
-              <p className="text-2xl text-muted-foreground">Graduate Research Coach</p>
+          <div className="text-white font-semibold italic text-center" 
+               style={{ 
+                 textShadow: '2px 2px 4px rgba(0,0,0,0.5)', 
+                 fontSize: 'clamp(1.5rem, 2.5vw, 3rem)'
+               }}>
+            <div className="flex flex-col items-center gap-0 leading-[0.8] md:leading-[0.7]">
+              <TypingAnimation className="!text-inherit">Are you lost at sea?</TypingAnimation>
             </div>
           </div>
         </div>
       </section>
 
+      <div className="space-y-16 mt-8">
+        <Button variant="default" className="w-full bg-accent text-accent-foreground hover:bg-accent/85 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3),0_4px_6px_-4px_rgba(0,0,0,0.3)] transition-all duration-300 py-10 text-lg" asChild>
+          <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">🏁 <span className="font-medium underline">Get Started!</span> <span className="font-semibold">Schedule a 30-Minute Free Consultation!</span></a>
+        </Button>
+      </div>
+
       <div className="space-y-16 mt-16">
-        <section className="bg-secondary/50 p-8 rounded-lg shadow-lg">
+        <section className="bg-secondary/50 p-8 rounded-lg shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)]">
           <h2 className="text-4xl font-bold mb-8 text-center text-primary">How Can I Help?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <SmoothLink 
@@ -121,7 +122,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-background p-8 rounded-lg shadow-lg interactive-hover">
+        <section className="bg-background p-8 rounded-lg shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)] interactive-hover">
           <h2 className="text-3xl font-bold mb-6 text-primary">Greetings fellow researcher,</h2>
           <div className="space-y-4 text-foreground/80">
             <p className="text-lg leading-relaxed">
