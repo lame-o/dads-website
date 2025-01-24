@@ -136,20 +136,20 @@ export default function Home() {
               services I can provide to help you get that degree in your hands! 🙌
             </p>
             <p className="text-lg leading-relaxed">
-            ❌ Other dissertation coaches can only provide organizational or emotional support, and they avoid your
-              methods, statistics and results.
-            </p>
-            <p className="text-lg leading-relaxed">
-            ❌ Other dissertation services can provide statistical outputs for you, but
-              are unable to help you interpret the results nor prepare to defend the results.
-            </p>
-            <p className="text-lg leading-relaxed">
               ✔️ As a <span className="font-semibold text-primary">Graduate Research
               Coach</span>, <span className="font-medium">I can provide a range of graduate student support services from</span> <span className="font-bold">dissertation coach</span>, <span className="font-semibold">academic
               advisor</span>, <span className="font-semibold">scientific editor</span>, <span className="font-semibold">methods consultant</span>, <span className="font-semibold">statistics</span>, <span className="font-semibold">IRB submission prep</span>, <span className="font-semibold">defense prep</span>, <span className="font-semibold">publication</span>,
               and more. I understand the entire process (masters, doctorate, PhD) from my extensive experience as a
               researcher, professor, Committee Chair, IRB member, and Director of two doctoral programs. I am
               passionate about research, and I love teaching others the process so they can achieve their goals 🏆
+            </p>
+            <p className="text-lg leading-relaxed">
+            ❌ Other dissertation coaches can only provide organizational or emotional support, and they avoid your
+              methods, statistics and results.
+            </p>
+            <p className="text-lg leading-relaxed">
+            ❌ Other dissertation services can provide statistical outputs for you, but
+              are unable to help you interpret the results nor prepare to defend the results.
             </p>
             <p className="text-lg leading-relaxed">
               Students appreciate my teaching style as I synthesize complex research concepts and explain them in a
