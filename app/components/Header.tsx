@@ -73,12 +73,28 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
+              <li className="shrink-0">
+                <Button 
+                  variant="default" 
+                  className="bg-accent text-accent-foreground hover:bg-accent/85 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3),0_4px_6px_-4px_rgba(0,0,0,0.3)] transition-all duration-300 text-sm xl:text-base whitespace-nowrap"
+                  asChild
+                >
+                  <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation" className="px-3 py-2">Schedule Consultation</a>
+                </Button>
+              </li>
             </ul>
             {/* Mobile/Tablet Menu Button - Show on screens smaller than lg */}
-            <div className="lg:hidden">
+            <div className="lg:hidden flex items-center gap-2 order-last">
+              <Button 
+                variant="default" 
+                className="bg-accent text-accent-foreground hover:bg-accent/85 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-2px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3),0_4px_6px_-4px_rgba(0,0,0,0.3)] transition-all duration-300 text-sm whitespace-nowrap order-first"
+                asChild
+              >
+                <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation" className="px-3 py-2">Schedule Consultation</a>
+              </Button>
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="mr-1 sm:mr-2">
+                  <Button variant="ghost" size="icon">
                     <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
                     <span className="sr-only">Toggle menu</span>
                   </Button>
@@ -100,12 +116,6 @@ export default function Header() {
                 </SheetContent>
               </Sheet>
             </div>
-            <Button 
-              variant="default" 
-              className="bg-accent text-accent-foreground hover:bg-accent/75 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <a href="mailto:ryanhdwight@yahoo.com?subject=Request%20for%20Free%2030-Minute%20Consultation">Schedule Consultation</a>
-            </Button>
           </nav>
         </div>
       </div>
