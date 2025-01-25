@@ -68,14 +68,29 @@ function GraduateResearchContent() {
 
   return (
     <PageWrapper>
-      <div className="max-w-6xl mx-auto px-4 pb-4 pt-12">
-        <div className="mb-8 px-4 text-center">
+      <div className="max-w-7xl mx-auto px-6 pb-4 pt-12">
+        <div className="mb-8 text-center">
           <FadeText 
             text="Graduate Research Services"
             direction="down"
             className="page-title !m-0 !p-0 inline-block"
           />
         </div>
+
+        <nav className="quick-nav" aria-label="Quick navigation">
+            {services.map(({ id, title, icon: Icon }) => (
+              <button
+                key={id}
+                onClick={() => scrollToSection(id)}
+                className="quick-nav-button flex items-center gap-2"
+              >
+                <Icon className="w-4 h-4" />
+                {title}
+              </button>
+            ))}
+          </nav>
+
+      
         <div className="space-y-12">
           <div className="page-section">
             <div className="content-text space-y-4 leading-relaxed w-full">
@@ -87,7 +102,7 @@ function GraduateResearchContent() {
               </p>
               <p className="text-lg leading-relaxed">
                 The journey is long - beginning from
-                <span className="block pl-4 my-2 border-l-2 border-primary/30 text-primary/90">
+                <span className="block pl-4 my-2 border-l-2 border-primary/30 text-black/75 italic">
                   <span className="font-semibold">graduate course work</span> → 
                   <span className="font-semibold"> topic search</span> → 
                   <span className="font-semibold"> lit review</span> → 
@@ -116,19 +131,6 @@ function GraduateResearchContent() {
               </p>
             </div>
           </div>
-
-          <nav className="quick-nav" aria-label="Quick navigation">
-            {services.map(({ id, title, icon: Icon }) => (
-              <button
-                key={id}
-                onClick={() => scrollToSection(id)}
-                className="quick-nav-button flex items-center gap-2"
-              >
-                <Icon className="w-4 h-4" />
-                {title}
-              </button>
-            ))}
-          </nav>
 
           <div className="space-y-8">
             <div key="office-hours" id="office-hours" className="relative p-8 rounded-lg border border-gray-300 bg-white">
